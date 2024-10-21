@@ -338,15 +338,15 @@ icon-placment {
   font-size: 14px;
 }
   
-  .fa-stack:hover > .fa-print {
-    color: black;
+.fa-stack:hover > .fa-print {
+  color: black;
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;  }
   
   .fa-stack:hover > .fa-circle {
-    color: white;
+  color: white;
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
