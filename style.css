@@ -352,7 +352,7 @@ icon-placment {
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;  }
-}
+
 
 .background{
   z-index:-1;
