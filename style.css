@@ -325,7 +325,6 @@ icon-placment {
 }
 
 @media only screen and (orientation: landscape) {
-
 .icon-placment{
   display:block;
   z-index:1;
