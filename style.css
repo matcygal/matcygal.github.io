@@ -52,31 +52,7 @@ li{
   list-style-type: none;
 }
 
-#main{
-  float: left;
-  width: var(--main-width);
-  padding: 0.25in 0.25in 0.25in 0.25in;
-  font-size: 7pt;
-  background-color: #fff !important;
-  height: 100%;
 
-
-}
-
-#sidebar{
-  float: right;
-  width: var(--sidebar-width);
-  min-height: 100%;
-  padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #fafafa;
-  font-size: 8.5pt;
-  margin:0;
-  height: 100%;
-  position:relative;
-  top: 0px;
-  bottom: 0px;
-
-}
 
 /* main */
 
@@ -352,7 +328,7 @@ li{
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;  }
-
+  
 
 .background{
   z-index:-1;
@@ -384,14 +360,7 @@ li{
   bottom: 5%;
   top: 5%;
 
-  background: #fafafa; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fafafa 0%, #fafafa 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #fafafa 0%,#fafafa 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #fafafa 0%,#fafafa 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #fafafa 0%,#fafafa 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #fafafa 0%,#fafafa 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+  background: #fafafa;
 
 
   margin: 20px auto 20px auto;
@@ -416,4 +385,66 @@ li{
 }
 
 
+#main{
+  float: left;
+  width: var(--main-width);
+  padding: 0.25in 0.25in 0.25in 0.25in;
+  font-size: 7pt;
+  background-color: #fff !important;
+  height: 100%;
 }
+
+#sidebar{
+  float: right;
+  width: var(--sidebar-width);
+  min-height: 100%;
+  padding: 0.6in var(--sidebar-horizontal-padding);
+  background-color: #fafafa;
+  font-size: 8.5pt;
+  margin:0;
+  height: 100%;
+  position:relative;
+  top: 0px;
+  bottom: 0px;
+
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .paper{
+    display: flex;
+    width:auto;
+    height:max-content;
+    min-height:100%;
+    background: #fafafa;
+  }
+  #main{
+    flex: 0.75;
+    width: 100%;
+    padding: 20px;
+    font-size: 7pt;
+    background-color: #fff !important;
+    height: 100%;
+    
+  }
+  
+  #sidebar{
+    flex: 0.25;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;  
+    background-color: #fafafa;
+    font-size: 8.5pt;
+    margin:0;
+  }
+
+
+}
+
+
